@@ -11,6 +11,8 @@
 		09D7713224E007730047AADE /* card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09D7713024E007730047AADE /* card.cpp */; };
 		09D7713524E00A3B0047AADE /* hand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09D7713324E00A3B0047AADE /* hand.cpp */; };
 		09D7713824E06A820047AADE /* basePlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09D7713624E06A820047AADE /* basePlayer.cpp */; };
+		09D7713B24E0A4440047AADE /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09D7713924E0A4440047AADE /* player.cpp */; };
+		09D7713E24E0A7D10047AADE /* machine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09D7713C24E0A7D10047AADE /* machine.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +36,10 @@
 		09D7713424E00A3B0047AADE /* hand.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = hand.hpp; sourceTree = "<group>"; };
 		09D7713624E06A820047AADE /* basePlayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = basePlayer.cpp; sourceTree = "<group>"; };
 		09D7713724E06A820047AADE /* basePlayer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = basePlayer.hpp; sourceTree = "<group>"; };
+		09D7713924E0A4440047AADE /* player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = player.cpp; sourceTree = "<group>"; };
+		09D7713A24E0A4440047AADE /* player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = player.hpp; sourceTree = "<group>"; };
+		09D7713C24E0A7D10047AADE /* machine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = machine.cpp; sourceTree = "<group>"; };
+		09D7713D24E0A7D10047AADE /* machine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = machine.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,10 @@
 				09D7713424E00A3B0047AADE /* hand.hpp */,
 				09D7713624E06A820047AADE /* basePlayer.cpp */,
 				09D7713724E06A820047AADE /* basePlayer.hpp */,
+				09D7713924E0A4440047AADE /* player.cpp */,
+				09D7713A24E0A4440047AADE /* player.hpp */,
+				09D7713C24E0A7D10047AADE /* machine.cpp */,
+				09D7713D24E0A7D10047AADE /* machine.hpp */,
 			);
 			path = BlackJack;
 			sourceTree = "<group>";
@@ -135,7 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				09D0A26924DB17EB00089A95 /* main.cpp in Sources */,
+				09D7713B24E0A4440047AADE /* player.cpp in Sources */,
 				09D7713224E007730047AADE /* card.cpp in Sources */,
+				09D7713E24E0A7D10047AADE /* machine.cpp in Sources */,
 				09D7713524E00A3B0047AADE /* hand.cpp in Sources */,
 				09D7713824E06A820047AADE /* basePlayer.cpp in Sources */,
 			);

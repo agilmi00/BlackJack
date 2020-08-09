@@ -2,9 +2,7 @@
 //  hand.hpp
 //  BlackJack
 //
-//  Created by Adrián Gil Miranda on 09/08/2020.
-//  Copyright © 2020 Adrián Gil Miranda. All rights reserved.
-//
+
 
 #ifndef hand_hpp
 #define hand_hpp

@@ -2,9 +2,7 @@
 //  card.hpp
 //  BlackJack
 //
-//  Created by Adrián Gil Miranda on 09/08/2020.
-//  Copyright © 2020 Adrián Gil Miranda. All rights reserved.
-//
+
 
 #ifndef card_hpp
 #define card_hpp
