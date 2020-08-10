@@ -6,7 +6,6 @@
 
 #include "card.hpp"
 
-
 Card::Card(rank r, suit s, bool faceUp): m_Rank(r), m_Suit(s), m_IsFaceUp(faceUp)
 {
     

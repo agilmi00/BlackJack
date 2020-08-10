@@ -14,6 +14,7 @@
 		09D7713B24E0A4440047AADE /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09D7713924E0A4440047AADE /* player.cpp */; };
 		09D7713E24E0A7D10047AADE /* machine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09D7713C24E0A7D10047AADE /* machine.cpp */; };
 		09D7714124E0AC530047AADE /* deck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09D7713F24E0AC530047AADE /* deck.cpp */; };
+		09D7714424E160DB0047AADE /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09D7714224E160DB0047AADE /* game.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,9 @@
 		09D7713D24E0A7D10047AADE /* machine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = machine.hpp; sourceTree = "<group>"; };
 		09D7713F24E0AC530047AADE /* deck.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = deck.cpp; sourceTree = "<group>"; };
 		09D7714024E0AC530047AADE /* deck.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = deck.hpp; sourceTree = "<group>"; };
+		09D7714224E160DB0047AADE /* game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = game.cpp; sourceTree = "<group>"; };
+		09D7714324E160DB0047AADE /* game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = game.hpp; sourceTree = "<group>"; };
+		09D7714624E196A70047AADE /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			children = (
 				09D0A26724DB17EB00089A95 /* BlackJack */,
 				09D0A26624DB17EB00089A95 /* Products */,
+				09D7714524E196A70047AADE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,8 +93,18 @@
 				09D7713D24E0A7D10047AADE /* machine.hpp */,
 				09D7713F24E0AC530047AADE /* deck.cpp */,
 				09D7714024E0AC530047AADE /* deck.hpp */,
+				09D7714224E160DB0047AADE /* game.cpp */,
+				09D7714324E160DB0047AADE /* game.hpp */,
 			);
 			path = BlackJack;
+			sourceTree = "<group>";
+		};
+		09D7714524E196A70047AADE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09D7714624E196A70047AADE /* libc++.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +167,7 @@
 				09D7714124E0AC530047AADE /* deck.cpp in Sources */,
 				09D0A26924DB17EB00089A95 /* main.cpp in Sources */,
 				09D7713B24E0A4440047AADE /* player.cpp in Sources */,
+				09D7714424E160DB0047AADE /* game.cpp in Sources */,
 				09D7713224E007730047AADE /* card.cpp in Sources */,
 				09D7713E24E0A7D10047AADE /* machine.cpp in Sources */,
 				09D7713524E00A3B0047AADE /* hand.cpp in Sources */,
@@ -274,6 +290,8 @@
 		09D0A26D24DB17EB00089A95 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -282,6 +300,8 @@
 		09D0A26E24DB17EB00089A95 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

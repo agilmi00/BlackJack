@@ -7,7 +7,6 @@
 #ifndef card_hpp
 #define card_hpp
 
-#include <stdio.h>
 
 class Card
 {

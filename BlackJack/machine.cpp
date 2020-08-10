@@ -5,10 +5,9 @@
 
 #include "machine.hpp"
 
-Machine::Machine(const string& name):
+Machine::Machine(const std::string& name):
     BasePlayer(name)
 {
-    
 }
 
 Machine::~Machine()
@@ -29,6 +28,6 @@ void Machine::FlipFirstCard()
     }
     else
     {
-        cout << "No card to flip!\n";
+        std::cout << "No card to flip!\n";
     }
 }

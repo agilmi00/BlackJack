@@ -7,13 +7,12 @@
 #ifndef machine_hpp
 #define machine_hpp
 
-#include <stdio.h>
 #include "basePlayer.hpp"
 
 class Machine : public BasePlayer
 {
 public:
-    Machine(const string& name = "Machine");
+    Machine(const std::string& name = "Machine");
     
     virtual ~Machine();
     

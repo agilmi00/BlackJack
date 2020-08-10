@@ -7,7 +7,6 @@
 #ifndef deck_hpp
 #define deck_hpp
 
-#include <stdio.h>
 #include "hand.hpp"
 #include "basePlayer.hpp"
 

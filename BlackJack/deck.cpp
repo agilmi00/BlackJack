@@ -43,20 +43,20 @@ void Deck::Deal(Hand& aHand)
     }
     else
     {
-        cout << "Out of cards. Unable to deal.";
+        std::cout << "Out of cards. Unable to deal.";
     }
 }
 
 void Deck::AdditionalCards(BasePlayer& aBasePlayer)
 {
-    cout << "\n";
+    std::cout << "\n";
     
-    while (!(aBasePlayer.isBusted()) && aBasePlayer.isHitting())
+    while (!(aBasePlayer.IsBusted()) && aBasePlayer.IsHitting())
     {
         Deal(aBasePlayer);
-//        cout << aBasePlayer << "\n";
+//        std::cout << aBasePlayer << "\n";
         
-        if (aBasePlayer.isBusted())
+        if (aBasePlayer.IsBusted())
         {
             aBasePlayer.Bust();
         }

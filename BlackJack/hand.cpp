@@ -24,7 +24,7 @@ void Hand::Add(Card* pCard)
 
 void Hand::Clear()
 {
-    vector<Card*>::iterator iter = m_Cards.begin();
+    std::vector<Card*>::iterator iter = m_Cards.begin();
     for (iter = m_Cards.begin(); iter != m_Cards.end(); ++iter) {
         delete *iter;
         *iter = 0;
@@ -45,7 +45,7 @@ int Hand::GetTotal() const
     }
     
     int total = 0;
-    vector<Card*>::const_iterator iter;
+    std::vector<Card*>::const_iterator iter;
     for (iter = m_Cards.begin(); iter != m_Cards.end(); ++iter)
     {
         total += (*iter) ->GetRank();

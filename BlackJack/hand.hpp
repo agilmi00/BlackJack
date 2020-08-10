@@ -9,9 +9,8 @@
 
 #include "card.hpp"
 #include <vector>
-#include <stdio.h>
 
-using namespace std;
+
 
 
 class Hand
@@ -28,7 +27,7 @@ public:
     int GetTotal() const;
     
 protected:
-    vector<Card*> m_Cards;
+    std::vector<Card*> m_Cards;
 };
 
 #endif /* hand_hpp */

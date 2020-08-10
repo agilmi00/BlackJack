@@ -6,13 +6,12 @@
 #ifndef player_hpp
 #define player_hpp
 
-#include <stdio.h>
 #include "basePlayer.hpp"
 
 class Player : public BasePlayer
 {
 public:
-    Player(const string& name = "");
+    Player(const std::string& name = "");
     
     virtual ~Player();
     

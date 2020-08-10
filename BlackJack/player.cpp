@@ -6,7 +6,7 @@
 
 #include "player.hpp"
 
-Player::Player(const string& name):
+Player::Player(const std::string& name):
     BasePlayer(name)
 {}
 
@@ -15,19 +15,24 @@ Player::~Player()
 
 bool Player::IsHitting() const
 {
-    cout << m_Name << ", do you want a hit? (Y/N): ";
+    std::cout << m_Name << ", do you want a hit? (Y/N): ";
     char response;
-    cin >> response;
+    std::cin >> response;
     
     return (response == 'Y' || response == 'y');
 }
 
 void Player::Win()  const
 {
-    cout << m_Name << " WINS.\n";
+    std::cout << m_Name << " WINS.\n";
 }
 
 void Player::Lose() const
 {
-    cout << m_Name << "loses.\n";
+    std::cout << m_Name << "loses.\n";
+}
+
+void Player::Push() const
+{
+    std::cout << m_Name << "pushes.\n";
 }
