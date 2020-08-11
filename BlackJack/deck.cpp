@@ -54,7 +54,7 @@ void Deck::AdditionalCards(BasePlayer& aBasePlayer)
     while (!(aBasePlayer.IsBusted()) && aBasePlayer.IsHitting())
     {
         Deal(aBasePlayer);
-//        std::cout << aBasePlayer << "\n";
+        std::cout << aBasePlayer << "\n";
         
         if (aBasePlayer.IsBusted())
         {

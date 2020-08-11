@@ -9,6 +9,7 @@
 
 #include "hand.hpp"
 #include "basePlayer.hpp"
+#include "card.hpp"
 
 class Deck : public Hand
 {

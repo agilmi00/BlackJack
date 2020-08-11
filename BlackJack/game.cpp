@@ -46,10 +46,10 @@ void Game::Play()
 //    display everyones hand
     for (pPlayer = m_Players.begin(); pPlayer != m_Players.end(); ++pPlayer)
     {
-        //std::cout << *pPlayer << "\n";
+        std::cout << *pPlayer << "\n";
     }
     
-//    std::cout << m_Machine <<  "\n";
+    std::cout << m_Machine <<  "\n";
     
 //    deal additional cards to a players
     for (pPlayer = m_Players.begin(); pPlayer != m_Players.end(); ++pPlayer)
@@ -59,7 +59,7 @@ void Game::Play()
     
 //    reveal machine firts card
     m_Machine.FlipFirstCard();
-//    std::cout << "\n" << m_Machine;
+    std::cout << "\n" << m_Machine;
     
 //    deal additional cards to machine
     m_Deck.AdditionalCards(m_Machine);
