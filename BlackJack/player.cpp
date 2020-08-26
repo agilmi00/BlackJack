@@ -29,7 +29,7 @@ void Player::Win()  const
 
 void Player::Lose() const
 {
-    std::cout << m_Name << "loses.\n";
+    std::cout << m_Name << " loses.\n";
 }
 
 void Player::Push() const
